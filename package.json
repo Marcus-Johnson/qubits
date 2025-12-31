@@ -1,0 +1,45 @@
+{
+  "name": "qubits",
+  "version": "1.0.0",
+  "description": "A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "index.d.ts",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "keywords": [
+    "quantum",
+    "simulator",
+    "qubit",
+    "quantum-computing",
+    "sparse-matrix",
+    "physics",
+    "nisq",
+    "gate-model"
+  ],
+  "author": "Marcus Johnson",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcus-johnson/qubits.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcus-johnson/qubits/issues"
+  },
+  "homepage": "https://github.com/marcus-johnson/qubits#readme",
+  "files": [
+    "src",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "jest": "^30.2.0"
+  }
+}
