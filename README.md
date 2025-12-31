@@ -1,5 +1,7 @@
 # qubits
 
+![Qubits CI](https://github.com/marcus-johnson/qubits/actions/workflows/ci.yml/badge.svg)
+
 A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem. Unlike traditional simulators that rely on dense state vectors, **qubit** employs a memory-efficient sparse-map representation and optimized scatter-logic execution to handle high qubit counts with low-to-moderate entanglement.
 
 ---
