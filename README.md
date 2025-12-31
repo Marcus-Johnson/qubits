@@ -1,15 +1,15 @@
-# qubits
+# qubitsjs
 
-![Qubits CI](https://github.com/marcus-johnson/qubits/actions/workflows/ci.yml/badge.svg)
+![qubitsjs CI](https://github.com/marcus-johnson/qubits/actions/workflows/ci.yml/badge.svg)
 
-A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem. Unlike traditional simulators that rely on dense state vectors, **qubit** employs a memory-efficient sparse-map representation and optimized scatter-logic execution to handle high qubit counts with low-to-moderate entanglement.
+A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem. Unlike traditional simulators that rely on dense state vectors, **qubitsjs** employs a memory-efficient sparse-map representation and optimized scatter-logic execution to handle high qubit counts with low-to-moderate entanglement.
 
 ---
 
 ## Installation
 
 ```bash
-npm install qubits
+npm install qubitsjs
 ```
 
 ---
@@ -19,7 +19,7 @@ npm install qubits
 ### Creating Entanglement (Bell State)
 
 ```javascript
-import { Q } from 'qubits';
+import { Q } from 'qubitsjs';
 
 Q.use(2, (q1, q2, ops) => {
     ops.h(q1);
@@ -56,7 +56,7 @@ Q.use(2, (aux, target, ops) => {
 ### Advanced Noisy Simulation
 
 ```javascript
-import { Q, NoiseModel } from 'qubits';
+import { Q, NoiseModel } from 'qubitsjs';
 
 const noise = new NoiseModel({ 
     gateError: 0.01, 
@@ -78,7 +78,7 @@ Q.use(1, (q, ops) => {
 
 ### 1. Sparse-Matrix State Representation
 
-Traditional simulators represent the quantum state as a dense complex vector of size $2^N$. **qubit** utilizes a Map-based sparse representation that tracks only non-zero amplitudes. This allows the simulator to maintain a constant memory footprint for basis states and scales with active amplitudes, supporting up to 64 qubits for low-depth circuits.
+Traditional simulators represent the quantum state as a dense complex vector of size $2^N$. **qubitsjs** utilizes a Map-based sparse representation that tracks only non-zero amplitudes. This allows the simulator to maintain a constant memory footprint for basis states and scales with active amplitudes, supporting up to 64 qubits for low-depth circuits.
 
 ### 2. Adaptive Memory Management
 

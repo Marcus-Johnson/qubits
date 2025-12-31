@@ -1,5 +1,5 @@
 {
-  "name": "qubits",
+  "name": "qubitsjs",
   "version": "1.0.0",
   "description": "A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem.",
   "type": "module",
