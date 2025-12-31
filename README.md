@@ -1,4 +1,4 @@
-# qubit
+# qubits
 
 A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem. Unlike traditional simulators that rely on dense state vectors, **qubit** employs a memory-efficient sparse-map representation and optimized scatter-logic execution to handle high qubit counts with low-to-moderate entanglement.
 
@@ -7,7 +7,7 @@ A high-performance, sparse-matrix quantum simulator designed for the simulation 
 ## Installation
 
 ```bash
-npm install qubit
+npm install qubits
 ```
 
 ---
@@ -17,7 +17,7 @@ npm install qubit
 ### Creating Entanglement (Bell State)
 
 ```javascript
-import { Q } from 'qubit';
+import { Q } from 'qubits';
 
 Q.use(2, (q1, q2, ops) => {
     ops.h(q1);
@@ -54,7 +54,7 @@ Q.use(2, (aux, target, ops) => {
 ### Advanced Noisy Simulation
 
 ```javascript
-import { Q, NoiseModel } from 'qubit';
+import { Q, NoiseModel } from 'qubits';
 
 const noise = new NoiseModel({ 
     gateError: 0.01, 
