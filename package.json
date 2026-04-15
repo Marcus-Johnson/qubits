@@ -1,12 +1,12 @@
 {
   "name": "qubitsjs",
-  "version": "1.0.0",
-  "description": "A high-performance, sparse-matrix quantum simulator designed for the simulation of NISQ-era (Noisy Intermediate-Scale Quantum) algorithms within a modern JavaScript/Node.js ecosystem.",
+  "version": "2.0.0",
+  "description": "A high-performance, sparse-matrix quantum simulator with unlimited qubit support, designed for NISQ-era algorithm simulation in Node.js.",
   "type": "module",
   "main": "src/index.js",
   "types": "index.d.ts",
   "engines": {
-    "node": ">=16.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
@@ -19,7 +19,8 @@
     "sparse-matrix",
     "physics",
     "nisq",
-    "gate-model"
+    "gate-model",
+    "bigint"
   ],
   "author": "Marcus Johnson",
   "license": "MIT",

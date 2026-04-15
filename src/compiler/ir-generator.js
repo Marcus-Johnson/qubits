@@ -5,9 +5,9 @@ export class Circuit {
     this.#ops.push({
       gate,
       qubit,
-      params: options.params || [],
+      params:    options.params    || [],
       condition: options.condition || null,
-      body: options.body || null,
+      body:      options.body      || null,
       timestamp: Date.now(),
     });
   }
@@ -16,6 +16,7 @@ export class Circuit {
     this.#ops = [];
   }
 
+  /** Returns a frozen shallow copy, callers cannot mutate the IR. */
   getInstructions() {
     return Object.freeze([...this.#ops]);
   }
